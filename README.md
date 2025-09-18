@@ -171,7 +171,7 @@ predict_sentiment("I absolutely loved this movie!")
 
 
 
-12. Deployment (Flask + ngrok)
+### 12. Deployment (Flask + ngrok)
 
 Built a Flask web app with:
 
@@ -187,7 +187,7 @@ Hosted via ngrok for public access.
 
 
 
-Results
+#### Results
 
 Best Model: Logistic Regression + TF-IDF
 
@@ -203,7 +203,7 @@ Error rate: ~11.6% misclassifications (mainly nuanced reviews)
 
 
 
-Run Notebook
+#### Run Notebook
 jupyter notebook "Sentiment Analysis on IMDB Reviews.ipynb"
 
 Run Flask App
@@ -217,7 +217,7 @@ python app.py & ngrok http 5000
 
 
 
-Future Work
+#### Future Work
 
 Incorporate Deep Learning (LSTMs, GRU, CNNs)
 
