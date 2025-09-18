@@ -169,8 +169,6 @@ predict_sentiment("I absolutely loved this movie!")
 # Output → ("positive", 0.94)
 
 
-
-
 ### 12. Deployment (Flask + ngrok)
 
 Built a Flask web app with:
@@ -198,8 +196,6 @@ ROC-AUC: ~0.95
 Cross-validation: Stable results, low variance
 
 Error rate: ~11.6% misclassifications (mainly nuanced reviews)
-
-
 
 
 
