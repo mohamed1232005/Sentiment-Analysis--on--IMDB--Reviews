@@ -1,1 +1,1 @@
-# Sentiment-Analysis--on--IMDB--Reviews
+# Sentiment-Analysis-on-IMDB-Reviews
