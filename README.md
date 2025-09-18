@@ -166,61 +166,28 @@ def predict_sentiment(review):
 
 Example:
 predict_sentiment("I absolutely loved this movie!")
-# Output → ("positive", 0.94)
-
+Output → ("positive", 0.94)
 
 ### 12. Deployment (Flask + ngrok)
 
-Built a Flask web app with:
+**Web App Features:**
+- Built using Flask
+- HTML form to enter reviews
+- Real-time prediction display
+- Confidence score shown with each prediction
+- Color-coded outputs:
+  - 🟢 Positive
+  - 🔴 Negative
+- Hosted via ngrok for public access
 
-HTML form to enter reviews
+**Results:**
+- **Best Model:** Logistic Regression + TF-IDF
+- **Accuracy:** ~88%
+- **ROC-AUC:** ~0.95
+- **Cross-Validation:** Stable results, low variance
+- **Error Rate:** ~11.6% misclassifications (mostly nuanced reviews)
 
-Real-time prediction display
-
-Confidence score
-
-Color-coded outputs (green for positive, red for negative)
-
-Hosted via ngrok for public access.
-
-
-
-#### Results
-
-Best Model: Logistic Regression + TF-IDF
-
-Accuracy: ~88%
-
-ROC-AUC: ~0.95
-
-Cross-validation: Stable results, low variance
-
-Error rate: ~11.6% misclassifications (mainly nuanced reviews)
-
-
-
-#### Run Notebook
-jupyter notebook "Sentiment Analysis on IMDB Reviews.ipynb"
-
-Run Flask App
-python app.py
-
-
-If using ngrok:
-
-python app.py & ngrok http 5000
-
-
-
-
-#### Future Work
-
-Incorporate Deep Learning (LSTMs, GRU, CNNs)
-
-Experiment with transformers (BERT, DistilBERT, RoBERTa)
-
-Add batch CSV upload for bulk predictions
-
-Improve sarcasm/irony detection
-
-Deploy on Heroku / AWS / GCP
+**How to Run:**
+- Run notebook:  
+  ```bash
+  jupyter notebook "Sentiment Analysis on IMDB Reviews.ipynb"
